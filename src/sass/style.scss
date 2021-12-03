@@ -1,13 +1,30 @@
-$font-stack: Helvetica, sans-serif;
-$font-light-theme: #333333;
-$background-light-theme: #ffffff;
+$blue: #55dde0;
+$purple: #A1869E;
+$white: #FFEECF;
+$black: #484349;
+$orange: #EA8C55;
+$green: #C5D86D;
 
-$font-dark-theme: #ffffff;
-$background-dark-theme: #333333;
+$font-stack: Helvetica, sans-serif;
+$font-light-theme: $black;
+$background-light-theme: $white;
+
+$font-dark-theme: $white;
+$background-dark-theme: $black;
+
 
 .dark-theme {
   color: $font-dark-theme;
   background-color: $background-dark-theme;
+
+  a {
+    color: $green;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   .nav-list {
     a {
@@ -104,7 +121,7 @@ body {
     margin-right: auto;
 
     a {
-      color: #14847E;
+      color: $purple;
       text-decoration: none;
       
       &:hover {
@@ -119,7 +136,7 @@ body {
     margin-right: auto;
 
     a {
-      color: #14847E;
+      color: $orange;
       text-decoration: none;
       
       &:hover {
