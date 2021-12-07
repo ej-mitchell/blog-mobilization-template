@@ -3,6 +3,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/js");
   // eleventyConfig.addPassthroughCopy("./src/img");
+
+  /* Collections */
+    eleventyConfig.addCollection('posts', collection => {
+        return [...collection.getFilteredByGlob('./src/blog/*.md')];
+    });
+
   return {
     dir: {
       input: "src",
