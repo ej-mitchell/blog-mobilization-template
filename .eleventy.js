@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection('projects', collection => {
-    return [...collection.getFilteredByGlob('./src/project/*.md')];
+    return [...collection.getFilteredByGlob('./src/projects/*.md')];
   });
 
 
