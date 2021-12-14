@@ -11,7 +11,17 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "projects"
+    label: "Projects"
+    folder: "src/project"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Project Lead", name: "author", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
 files:
     - name: "home"
       label: "Homepage"

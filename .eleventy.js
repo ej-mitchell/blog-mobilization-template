@@ -6,9 +6,14 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPassthroughCopy("./src/img");
 
   /* Collections */
-    eleventyConfig.addCollection('posts', collection => {
-        return [...collection.getFilteredByGlob('./src/blog/*.md')];
-    });
+  eleventyConfig.addCollection('posts', collection => {
+    return [...collection.getFilteredByGlob('./src/blog/*.md')];
+  });
+
+  eleventyConfig.addCollection('projects', collection => {
+    return [...collection.getFilteredByGlob('./src/project/*.md')];
+  });
+
 
   return {
     dir: {
